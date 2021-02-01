@@ -2,6 +2,7 @@ var bullet,bullet2,bullet3,bullet4, wall,wall2,wall3,wall4;
 var speed,speed2,speed3,speed4, weight,weight2,weight3,weight4;
 var wallLeftEdge,wallLeftEdge2,wallLeftEdge3,wallLeftEdge4, bulletLeftEdge,bulletLeftEdge2,bulletLeftEdge3,bulletLeftEdge4;
 var thickness,thickness2,thickness3,thickness4;
+var line, line2, line3;
 function setup() {
   createCanvas(1500,400);
   speed = random(223,321);
@@ -38,6 +39,10 @@ function setup() {
   wall3.shapeColor = color(80,80,80);
   wall4=createSprite(1200,350,thickness4,80);
   wall4.shapeColor = color(80,80,80);
+  
+   line = createSprite(800,100,1600,10);
+   line2 = createSprite(800,200,1600,10);
+   line3 = createSprite(800,300,1600,10);
 }
 
 function draw() {
